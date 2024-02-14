@@ -14,7 +14,7 @@
     <main>
         <div class="flex gap-2">
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- first-card -->
+                <!-- triangle-card -->
                 <div class="card  bg-base-100 shadow-xl bg-pink-200 pt-3">
                     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body">
@@ -27,21 +27,28 @@
                         <span class="ml-1">cm</span>
                       </div>
                       <div>
-                        <p>Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                        <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
                       </div>
                       <div class="card-actions ">
-                        <button onclick="getTriangle()" class="btn btn-primary w-full">Buy Now</button>
+                        <button onclick="getTriangle()" class="btn btn-primary w-full">calculate</button>
                       </div>
                     </div>
                   </div>
                 <!-- rectangle-card -->
                 <div class="card bg-[#1111111A] bg-base-100 shadow-xl">
-                    <figure><img class="pt-5 pl-5 pr-5" src="images/rectangle.png" alt="Shoes" /></figure>
+                    <figure><img class="pt-16 pl-5 pr-5" src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w * l</p>
+                      <div class="flex">
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="rectangle-width" placeholder="w"><span>cm</span>
+                        <input class="w-20 bg-white p-1 rounded-sm" type="text" name="" id="rectangle-length" placeholder="l"><span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area : <span id="rectangle-area"></span>cm<sup>2</sup><span></span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Buy Now</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">calculate</button>
                       </div>
                     </div>
                   </div>
