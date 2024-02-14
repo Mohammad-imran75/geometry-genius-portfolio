@@ -105,3 +105,23 @@ function calculatePentagonArea(){
     const areaSpan = document.getElementById('pentagon-area');
     areaSpan.innerText = area;
 }
+// Ellipse area calculate 
+function calculateEllipseArea(){
+    // get the ellipse ability 
+    const ellipseAbilityInput = document.getElementById('ellipse-ability');
+    const ellipseAbilityText = ellipseAbilityInput.value;
+    const ability = parseFloat(ellipseAbilityText);
+    
+    // get the ellipse base 
+    const ellipseBaseInput = document.getElementById('ellipse-base');
+    const ellipseBaseText = ellipseBaseInput.value;
+    const base = parseFloat(ellipseBaseText);
+    
+    // get the ellipse area
+    const area = 3.1416 * ability * base;
+    console.log("The area of ellipse :", area );
+
+    // showing the display in ellipse area
+    const areaSpan = document.getElementById('ellipse-area');
+    areaSpan.innerText = area;
+}
