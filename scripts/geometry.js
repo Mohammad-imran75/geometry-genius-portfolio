@@ -86,3 +86,22 @@ function calculateRhombusArea(){
     const areaSpan = document.getElementById('rhombus-area');
     areaSpan.innerText = area;
 }
+// pentagon area calculate 
+function calculatePentagonArea(){
+    // get the pentagon properties
+    const pentagonAreaPropertiesInput = document.getElementById('pentagon-properties');
+    const pentagonAreaPropertiesText = pentagonAreaPropertiesInput.value;
+    const properties = parseFloat(pentagonAreaPropertiesText);
+    console.log(properties); 
+    // get the pentagon base 
+    const pentagonAreaBaseInput = document.getElementById('pentagon-base');
+    const pentagonAreaBaseText = pentagonAreaBaseInput.value;
+    const base = parseFloat(pentagonAreaBaseText);
+    console.log(base);
+    // get the pentagon area 
+    const area = 0.5 * properties * base ;
+    console.log("The area of pentagon :", area);
+    // showing the display in pentagon area 
+    const areaSpan = document.getElementById('pentagon-area');
+    areaSpan.innerText = area;
+}

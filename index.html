@@ -88,23 +88,39 @@
                       </div>
                     </div>
                   </div>
-                <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                  <!-- pentagon cad -->
+                <div class="card  bg-[#1111111A] shadow-xl">
+                    <figure><img class="pt-12" src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title text-2xl">Pentagon</h2>
+                      <p class="text-xl">Area (A) = 0.5 * p * b</p>
+                      <div class="flex">
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="pentagon-properties" placeholder="p"><span class="ml-2 mr-1">cm</span>
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="pentagon-base" placeholder="b"><span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area : <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                  <!-- Ellipse card -->
+                <div class="card  bg-[#FFFFFF] shadow-xl">
+                    <figure><img class="pt-16 pl-4 pr-4" src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title text-3xl">Ellipse</h2>
+                      <p>Area (A) = 3.1416 * a * b</p>
+                      <div class="flex">
+                        <input class="bg-gray-300 w-20 p-1 rounded-sm" type="text" name="" id="ellipse-ability" placeholder="a"><span class="ml-2 mr-1">cm</span>
+                        <input class="bg-gray-300 w-20 p-1 rounded-sm" type="text" name="" id="ellipse-base" placeholder="b"><span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area : <span id="ellipse-area"></span><span>cm<sup>2</sup></span></p>
+                      </div> 
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
