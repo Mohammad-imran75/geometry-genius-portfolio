@@ -7,37 +7,76 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="m-8">
     <header>
 
     </header>
     <main>
-        <div>
-            <div>
+        <div class="flex gap-2">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- first-card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card  bg-base-100 shadow-xl bg-pink-200 pt-3">
+                    <figure><img src="images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5 * b * h</p>
+                      <div class="flex flex-1">
+                        <input id="triangle-base" type="text" placeholder="b" class="bg-white w-20 p-1 rounded-sm">
+                        <span class="ml-1 mr-1">cm</span>
+                        <input class="w-20 bg-white p-1 rounded-sm" placeholder="h" type="text" name="" id="triangle-height">
+                        <span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p>Area: <span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions ">
+                        <button onclick="getTriangle()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
-                <!-- second-card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <!-- rectangle-card -->
+                <div class="card bg-[#1111111A] bg-base-100 shadow-xl">
+                    <figure><img class="pt-5 pl-5 pr-5" src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w * l</p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
                 <!-- third-card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card  bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Shoes!</h2>
@@ -48,10 +87,11 @@
                     </div>
                   </div>
             </div>
-            <div>
-
+            <div class="w-96 border-2 rounded-sm border-gray-700">
+                <h3 class="text-center text-3xl pt-2">Area Calculation</h3>
             </div>
         </div>
     </main>
+    <script src="scripts/geometry.js"></script>
 </body>
 </html>
