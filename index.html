@@ -41,8 +41,8 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area (A) = w * l</p>
                       <div class="flex">
-                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="rectangle-width" placeholder="w"><span>cm</span>
-                        <input class="w-20 bg-white p-1 rounded-sm" type="text" name="" id="rectangle-length" placeholder="l"><span>cm</span>
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="rectangle-width" placeholder="w"><span class="ml-2 mr-1">cm</span>
+                        <input class="w-20 bg-white p-1 rounded-sm" type="text" name="" id="rectangle-length" placeholder="l"><span class="ml-1">cm</span>
                       </div>
                       <div>
                         <p class="text-2xl">Area : <span id="rectangle-area"></span>cm<sup>2</sup><span></span></p>
@@ -52,24 +52,39 @@
                       </div>
                     </div>
                   </div>
-                <!-- third-card -->
-                <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <!-- parallelogram-card -->
+                <div class="card  bg-[#1111111A] shadow-xl">
+                    <figure><img class="pt-16 pl-4 pr-4" src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title text-2xl">Parallelogram</h2>
+                      <p>Area (A) = b * h</p>
+                      <div class="flex">
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="b"><span class="ml-2 mr-1">cm</span>
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="h"><span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area : <span id="parallelogram-area"></span><span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
-                <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                  <!-- rhombus card -->
+                <div class="card  bg-[#69C7F0] shadow-xl">
+                    <figure><img class="pt-16 pl-4 pr-4" src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title text-2xl">Rhombus</h2>
+                      <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                      <div class="flex">
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="first-karna" placeholder="d1"><span class="ml-2 mr-1">cm</span>
+                        <input class="bg-white w-20 p-1 rounded-sm" type="text" name="" id="second-karna" placeholder="d2"><span class="ml-1">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area : <span id="rhombus-area"></span><span>cm<sup>2</sup></span></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
